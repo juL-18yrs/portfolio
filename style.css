@@ -1,0 +1,192 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff0f5;
+    color: #333;
+}
+
+/* Navigation */
+header {
+    background: #4b164c;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+}
+
+.logo span {
+    color: #ff69b4;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff69b4;
+}
+
+/* Hero section */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 50px 10%;
+    background: linear-gradient(135deg, #fff0f5, #e8c5ee);
+}
+
+.hero-content h3 {
+    color: #8e278b;
+    font-size: 22px;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin: 15px 0;
+}
+
+.hero-content h1 span {
+    color: #a83291;
+}
+
+.hero-content h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    max-width: 500px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background: #8e278b;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #4b164c;
+}
+
+/* About */
+.about, .services, .portfolio, .contact {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+section h2 span {
+    color: #a83291;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* Services */
+.services {
+    background: #fce4f0;
+}
+
+.service-container,
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.service-card, .project {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.service-card h3, .project h3 {
+    color: #8e278b;
+    margin-bottom: 15px;
+}
+
+/* Portfolio */
+.portfolio {
+    background: white;
+}
+
+.project {
+    background: #fff0f5;
+}
+
+/* Contact */
+.contact {
+    background: #fce4f0;
+}
+
+.contact p {
+    margin-bottom: 25px;
+}
+
+/* Footer */
+footer {
+    background: #4b164c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .hero-content h2 {
+        font-size: 20px;
+    }
+}
